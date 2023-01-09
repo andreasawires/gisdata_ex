@@ -53,10 +53,4 @@ def crea_report():
             cursor.close()
 
 if __name__ == "__main__":
-    while True:
-        # script starts at 9:00 am
-        now = datetime.datetime.now()
-        if now.hour == 9 and now.minute == 0:
-            crea_report()
-            break
-        time.sleep(60)
+    crea_report()
